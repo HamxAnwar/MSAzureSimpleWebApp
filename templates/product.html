@@ -8,7 +8,7 @@
 <body>
     <h1>{{ product.name }}</h1>
     <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}" width="200px"></img>
-    <p>Price: ${{ product.price }}</p>
+    <p>Price: £{{ product.price }}</p>
     <p>Description: {{ product.description }}</p>
     <a href="/add_to_cart/{{ product.id }}">Add to Cart</a>
     <a href="/">Back to Catalog</a>

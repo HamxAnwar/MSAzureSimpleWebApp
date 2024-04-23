@@ -38,7 +38,7 @@
         <tr>
             <td><img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}"></img></td>
             <td><a href="/product/{{ product.id }}">{{ product.name }}</a></td>
-            <td>${{ product.price }}</td>
+            <td>£{{ product.price }}</td>
             <td>
                 <form action="/add_to_cart/{{ product.id }}">
                     <button type="submit">Add to Cart</button>

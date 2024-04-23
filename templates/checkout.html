@@ -10,10 +10,10 @@
     <h2>Shopping Cart</h2>
     <ul>
         {% for item in shopping_cart %}
-            <li>{{ item.name }} - ${{ item.price }}</li>
+            <li>{{ item.name }} - £{{ item.price }}</li>
         {% endfor %}
     </ul>
-    <h2>Total: ${{ total }}</h2>
+    <h2>Total: £{{ total }}</h2>
     <button>Pay Now</button>
     <a href="/cart">Back to Cart</a>
 </body>
